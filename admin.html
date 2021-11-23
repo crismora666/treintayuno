@@ -1,0 +1,67 @@
+<html>
+  <head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Treintayuno">
+    <title>Treintayuno Admin</title>
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/static/admin.css">
+	<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
+	<style>
+		h1 {
+			font-family: 'Sofia';font-size: 28px;
+		}
+		label {
+			font-family: 'Actor';font-size: 18px;
+		}
+	</style>
+  </head>
+  <body>
+    <div>
+  	  <form id="agregar">
+  	    <h1>Agregar Jugador</h1>
+        <p><label>ID:</label>
+  	    <input type="text" name="addid" id="addid" required></p>
+        <p><label>Nombre:</label>
+  	    <input type="text" name="addname" required></p>
+        <p><label>Veces:</label>
+  	    <input type="text" name="addveces" value="0" required></p>
+        <p><label>Dinero:</label>
+  	    <input type="text" name="adddinero" required></p>
+        <p><label>EsHombre:</label>
+  	    <input type="text" name="addeshombre" required></p>
+    		<button type="submit" class="btn">Agregar</button>
+  	  </form>
+	  </div>
+    <div>
+      <form id="borrar">
+        <h1>Borrar Jugador</h1>
+        <select id="players" name="p">
+          <option value="none">Espere...</option>
+        </select>
+        <button type="submit" class="btn">Borrar</button>
+      </form>
+    </div>
+    <div>
+      <form id="dardinero">
+        <h1>Dar Dinero</h1>
+        <select id="players2" name="p2">
+          <option value="none">Espere...</option>
+        </select>
+        <p><label>Dinero:</label>
+  	    <input type="text" name="masdinero" required></p>
+        <button type="submit" class="btn">Dar</button>
+      </form>
+    </div>
+    <div>
+      <form id="resetear">
+        <h1>Resetear Juego</h1>
+        <button type="submit" class="btn">Resetear</button>
+      </form>
+    </div>
+    <div id="snackbar">Exito</div>
+	<script src="/static/admin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+  <head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Treintayuno">	
+    <title>Treintayuno</title>
+    <link rel="icon" href="https://cdn.glitch.com/44e8e9d5-50f0-44bc-a4a1-fa65893b2a22%2Ffavicon.ico?v=1594009585571" type="image/x-icon">
+	<link rel="stylesheet" href="/static/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
+	<style>
+		h1 {
+			font-family: 'Sofia';font-size: 28px;
+		}
+		label {
+			font-family: 'Actor';font-size: 18px;
+		}
+	</style>  
+	<script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <div class="bg-img">
+	  <form class="container">
+		<h1 id="cabeza">Treinta y Uno</h1>
+		<p><label id="cuerpo">Disfruta en familia, arma tu mejor juego y cuida de perder tus fichas. Selecciona tu nombre:</label></p>
+		<select id="players" name="p">
+		  <option value="none">Espere...</option>
+		</select>
+		<button type="submit" class="btn">Jugar</button>
+	  </form>
+	</div> 
+	<script src="/static/index.js"></script>	
+  </body>
+</html>
