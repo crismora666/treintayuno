@@ -1,6 +1,6 @@
-# hello-express
+# Treinta y Uno
 
-A server that serves a webpage, its resources, and some data
+An implementation of the traditional Ecuadorian cards game.
 
 
 ## Your Project
